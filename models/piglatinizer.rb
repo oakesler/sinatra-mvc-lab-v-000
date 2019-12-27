@@ -6,10 +6,20 @@ class PigLatinizer
     @text = text.downcase
   end
   
-  
-  
-  
-  
+  def twister
+    array = []
+    x = @text.scan(/(\w)/)         #n o o d l e  s o u p
+    y = x.length                   #10
+    x.each do |item|
+      if item.scan(/[aeiou]/)
+        array << x.index("#{item}")  
+      end
+    end                         # [1, x, x]
+    
+    x.slice(x[0], y)
+    
+    
+    
 end
   
   
