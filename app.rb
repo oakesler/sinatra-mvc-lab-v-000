@@ -11,8 +11,8 @@ class App < Sinatra::Base
 
   post '/pig_text' do 
     @pig_text = TextAnalyzer.new(params[:user_text])
-    #erb :results
-  #end
+    erb :pig_text
+  end
 
 
 
