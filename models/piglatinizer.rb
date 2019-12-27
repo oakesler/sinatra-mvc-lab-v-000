@@ -7,19 +7,21 @@ class PigLatinizer
   end
   
   def twister
-    array = []
-    x = @text.scan(/(\w)/)         #n o o d l e  s o u p
-    y = x.length                   #10
-    x.each do |item|
-      if item.scan(/[aeiou]/)
-        array << x.index("#{item}")  
+    a = [ ]
+    b = [ ]                          # final_array
+    c = @text.split(" ")             # [noodle, soup]
+    
+    c.each do |item|
+      x = item.scan(/(\w)/)         # n o o d l e 
+      y = x.length -1 
+      item.each do |letter|
+        if letter.scan(/[aeiou]/)
+          a << x.index("#{letter}")
+        end
       end
-    end                         # [1, x, x]
-    
-    x.slice(x[0], y)
-    
-    
-    
+      b << "#{x.slice(a[0], y).join}#{x.slice(0, a[0])}ay"
+    end
+  b.join(" ")
 end
   
   
