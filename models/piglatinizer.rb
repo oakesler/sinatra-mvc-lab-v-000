@@ -10,12 +10,12 @@ class PigLatinizer
     word_array.each do |word|
       x = word.scan(/\w/)
       x.each do |letter|
-        if letter.match(/[aeiou]/)
+        if letter.match(/[aeiouAEIOU]/)
           letter_array << letter
         end
       end 
       v = x.index(letter_array[0])
-      y = x.slice(v, x.length - 1).join("")
+      y = x.slice(v, word.length - 1).join("")
       z = x.slice(0, v).join("")
       final_output_array << "#{y}#{z}ay"
     end
