@@ -5,13 +5,12 @@ class PigLatinizer
   def piglatinize(words)
     binding.pry
     final_output_array = [ ]            
-    letter_array = [ ]   
-    
   
     
     word_array = words.split(" ")
     
     word_array.each do |word|
+      letter_array = []
       x = word.scan(/\w/)
       if x.length == 1 
         final_output_array << "#{x[0]}way"
