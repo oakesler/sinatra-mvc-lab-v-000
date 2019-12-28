@@ -15,7 +15,7 @@ class PigLatinizer
         end
       end 
       v = x.index(letter_array[0])
-      y = x.slice(v, word.length - 1).join("")
+      y = x.slice(v, x.length - 1).join("")
       z = x.slice(0, v).join("")
       final_output_array << "#{y}#{z}ay"
     end
