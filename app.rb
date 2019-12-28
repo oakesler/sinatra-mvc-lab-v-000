@@ -1,3 +1,5 @@
+require "pry"
+
 require_relative 'config/environment'
 require_relative 'models/piglatinizer.rb'
 
@@ -11,7 +13,7 @@ class App < Sinatra::Base
 
   post '/piglatinize' do 
     @user_phrase = PigLatinizer.new.piglatinize(params["user_phrase"])
-    
+    binding.pry
     erb :piglatinize
   end
 
