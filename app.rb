@@ -10,7 +10,7 @@ class App < Sinatra::Base
   end
 
   post '/' do 
-    @pig_text = PigLatinizer.new(params[:user_text]).twister
+    @user_phrase = PigLatinizer.new(params[:user_text]).twister
     erb :pig_text
   end
 
