@@ -27,7 +27,7 @@ class PigLatinizer
           final_output_array << "#{y}#{z}ay"
         end
       end
-      final_output_array.join(" ")
     end
+    final_output_array.join(" ")
   end
 end
