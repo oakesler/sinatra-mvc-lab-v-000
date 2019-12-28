@@ -1,5 +1,3 @@
-require "pry"
-
 require_relative 'config/environment'
 require_relative 'models/piglatinizer.rb'
 
