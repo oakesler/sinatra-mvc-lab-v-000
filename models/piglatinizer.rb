@@ -1,15 +1,15 @@
 class PigLatinizer
-  attr_reader :text
+  attr_reader :words
   
-  def initialize(text)
-    @text = text.downcase
+  def initialize(words)
+    @words = words.downcase
   end
   
-  def twister
+  def piglatinize
     final_output_array = [ ]            
     letter_array = [ ]   
     
-    word_array = text.split(" ")
+    word_array = words.split(" ")
     
     word_array.each do |word|
       x = word.scan(/\w/)
