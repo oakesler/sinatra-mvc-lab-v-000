@@ -3,7 +3,6 @@ require "pry"
 class PigLatinizer
   
   def piglatinize(words)
-    binding.pry
     final_output_array = [ ]            
   
     
