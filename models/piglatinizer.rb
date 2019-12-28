@@ -1,6 +1,6 @@
 class PigLatinizer
   
-  def piglatinize
+  def piglatinize(words)
     final_output_array = [ ]            
     letter_array = [ ]   
     
