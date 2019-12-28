@@ -1,10 +1,6 @@
 class PigLatinizer
   attr_reader :words
   
-  def initialize(
-    @words = words.downcase
-  end
-  
   def piglatinize
     final_output_array = [ ]            
     letter_array = [ ]   
