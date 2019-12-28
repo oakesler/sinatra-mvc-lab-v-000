@@ -15,7 +15,7 @@ class PigLatinizer
       if x.length == 1 
         final_output_array << "#{x[0]}way"
         elsif x.length == 2
-        final_output_array << "#{x[1]}#{x[0]}way"
+        final_output_array << "#{x[1]}#{x[0]}ay"
         elsif x[0].match(/[AEIOUaeiou]/)
         final_output_array << "#{word}way"
         else
