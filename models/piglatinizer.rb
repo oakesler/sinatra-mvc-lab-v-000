@@ -1,6 +1,3 @@
-require 'pry'
-
-
 class PigLatinizer
   attr_reader :text
   
@@ -12,7 +9,7 @@ class PigLatinizer
     final_output_array = [ ]            
     letter_array = [ ]   
     
-    word_array = @text.split(" ")
+    word_array = text.split(" ")
     
     word_array.each do |word|
       x = word.scan(/\w/)
