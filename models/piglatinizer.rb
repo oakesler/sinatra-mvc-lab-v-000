@@ -26,9 +26,7 @@ class PigLatinizer
           end
           
           v = x.index(letter_array[0])
-          if v == nil 
-            binding.pry
-          end
+         
           y = x.slice(v, word.length - 1).join("")
           z = x.slice(0, v).join("")
           final_output_array << "#{y}#{z}ay"
