@@ -14,7 +14,9 @@ class PigLatinizer
       if x.length == 1 
         final_output_array << "#{x[0]}way"
       end
-    end
+      elsif x.length == 2 
+      final_output_array << "#{x[1]}#{x[0]}way"
+    else
       x.each do |letter|
         if letter.match(/[aeiouAEIOU]/)
           letter_array << letter
