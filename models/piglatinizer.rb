@@ -18,7 +18,7 @@ class PigLatinizer
         elsif x[0].match(/[AEIOUaeiou]/)
         final_output_array << "#{word}way"
         elsif word == "an"
-        final_output_array << "#{}"
+        final_output_array << "anway"
         else
           x.each do |letter|
             if letter.match(/[aeiou]/)
