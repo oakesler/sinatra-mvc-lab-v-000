@@ -26,6 +26,8 @@ class PigLatinizer
           z = x.slice(0, v).join("")
           final_output_array << "#{y}#{z}ay"
         end
+      end
       final_output_array.join(" ")
+    end
   end
 end
