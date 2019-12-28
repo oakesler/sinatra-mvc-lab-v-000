@@ -23,6 +23,7 @@ class PigLatinizer
               letter_array << letter
             end
           end
+          
           v = x.index(letter_array[0])
           y = x.slice(v, word.length - 1).join("")
           z = x.slice(0, v).join("")
