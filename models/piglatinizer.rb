@@ -1,5 +1,4 @@
 class PigLatinizer
-  attr_reader :words
   
   def piglatinize
     final_output_array = [ ]            
