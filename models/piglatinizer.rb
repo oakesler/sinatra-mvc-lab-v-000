@@ -5,6 +5,8 @@ class PigLatinizer
     final_output_array = [ ]            
     letter_array = [ ]   
     
+    binding.pry
+    
     word_array = words.split(" ")
     
     word_array.each do |word|
